@@ -1,0 +1,117 @@
+	<!DOCTYPE html>
+	<html>
+		<head>
+			<meta charset="utf-8" />
+			<title>登陆界面</title>
+			<embed src="static/a.mp3" hidden="true" autostart="true" loop="
+		true">
+			<style type="text/css">
+				body{
+					background-color:paleturquoise; 
+					background-size: cover;/*覆盖 ，把背景扩展到足够大，使背景完全覆盖*/
+				}
+				.left{
+					width:900px;height: 950px;float:left;
+				}
+				.right{
+					width:900px;height:950px;
+					margin: 0px auto;
+				}
+				.table{
+					text-align: center;
+					padding: 50px 100px 0px 100px;
+				}
+				.table p{
+					font-family:"\534E\6587\884C\6977";
+					font-size:80px;
+				}
+				.form{
+					width:900px;height:500px;
+				}
+				.usename{
+					width:900px;height:20px;font-family: "\82F9\679C\4E3D\7EC6\5B8B";color: white;font-weight: bold;
+
+				}
+				.p1{
+					font-family:"\82F9\679C\4E3D\7EC6\5B8B";text-align: left;color: white;font-weight: bold;
+				}
+				input[type=text],input[type=password]{
+					  	margin: 0px;
+					  	padding: 0 10px;
+						width: 98%;
+						height: 50px;
+						color: ;
+						background: white;
+						border: 0px solid;
+						border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+						border-radius: 10px;
+						
+					  
+					}
+				input[type=submit]{
+						margin: 0px;
+					  	padding: 0 10px;
+						width: 150px;
+						height: 50px;
+						color: white;
+						background: darkred;
+						border: 0px solid;
+						border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+						border-radius: 10px;
+						font-family:"\82F9\679C\4E3D\7EC6\5B8B";color: white;font-weight: bold;
+						font-size: 20px;
+				}
+				input[type=button]{
+						margin: 0px;
+					  	padding: 0 10px;
+						width: 150px;
+						height: 50px;
+						color: white;
+						background: darkred;
+						border: 0px solid;
+						border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+						border-radius: 10px;
+						font-family:"\82F9\679C\4E3D\7EC6\5B8B";color: white;font-weight: bold;
+						font-size: 20px;
+				}
+				.p2{
+					font-family:"\82F9\679C\4E3D\7EC6\5B8B";text-align: left;color: white;font-weight: bold;
+				}
+			</style>
+		</head>
+		<body>
+			<div class="right">
+				<div class="table">
+					<p>
+						LOGIN
+					</p>
+				</div>
+				<form action="loginuser" method="post">
+				<div class="form">
+
+					<div class="usename">
+						<p class="p1">Usename</p>
+						
+					</div>
+					<div>
+						<input type="text" name="user" placeholder="请输入用户名"size="50" /><br />
+						
+					</div>
+					<div class="usename">
+						<p class="p2">Password</p>
+					</div>
+					<div>
+						<input type="password" name="password" placeholder="密码" maxlength="20" /><br />
+					</div>
+					<div class="usename">
+					
+					</div>
+					<div>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span><a href="index.html"><input type="submit" value="LOGIN IN" /></a></span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span><a href="regist"><input type="button" value="REGISTER" /></a></span>
+					</div>
+				</div>
+			</form>
+			</div>
+		</body>
+	</html>

@@ -1,0 +1,50 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<embed src="static/a.mp3" hidden="true" autostart="true" loop="
+	true">
+	<style type="text/css">
+	body{
+		background-color:paleturquoise; 
+		background-size: cover;/*覆盖 ，把背景扩展到足够大，使背景完全覆盖*/
+	}
+	.box1{
+		width: 1200px;
+		margin: 0 auto;
+		border: 2px solid;
+	}
+	</style>
+</head>
+<body>
+	<table border="1" align="center" width="1200">
+		<tr>
+			<th>
+				ID
+			</th>
+			<th>
+				姓名
+			</th>
+			<th>
+				电话
+			</th>
+			<th>
+				地址
+			</th>
+		</tr>
+		{% for i in u %}
+		<tr>
+			{% for s in i%}
+			<th>
+				{{s}}
+			</th>
+			{% endfor %}
+
+
+		
+		</tr>
+		{% endfor %}
+	</table>
+</body>
+</html>

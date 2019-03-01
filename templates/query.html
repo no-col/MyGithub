@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<embed src="static/a.mp3" hidden="true" autostart="true" loop="
+		true">
+	<style text/css>
+		body{
+			background-color:paleturquoise; 
+			background-size: cover;/*覆盖 ，把背景扩展到足够大，使背景完全覆盖*/
+		}
+		.box1{
+			width:900px;
+			height:950px;
+			margin: 0px auto;
+		}
+		.box2{
+			width: 900px;
+			height: 150px;
+			text-align: center;
+			padding: 10px 0px 0px 0px;
+			font-size:60px;
+		}
+		.box3{
+			width:900px;
+			height:20px;
+			color: white;
+			font-weight: bold;
+			border: 0px solid white;
+			}
+		.p{
+			text-align: left;
+			color: white;
+			font-weight: bold;
+		}
+		input[type=text]{
+			margin: 0px;
+		  	padding: 0 10px;
+			width: 98%;
+			height: 50px;
+			background: white;
+			border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+			border-radius: 10px;  
+			}
+		input[type=submit]{
+					margin: 10px;
+				  	padding: 0 10px;
+					width: 190px;
+					height: 50px;
+					color: white;
+					background: darkred;
+					border: 0px solid;
+					border-color: #c4c4c4 #d1d1d1 #d4d4d4;
+					border-radius: 10px;
+					font-family:"\82F9\679C\4E3D\7EC6\5B8B";color: white;font-weight: bold;
+					font-size: 20px;
+			}	
+	</style>
+</head>
+<body>
+	<div class="box1">
+		<div class="box2">
+			<p>
+				QUERY
+			</p>
+		</div>
+		<form action="queryuser" method="post">
+			<div class="box3">
+				<p class="p">
+					id
+				</p>
+			</div>
+			<div>
+				<input type="text" name="id" placeholder="请输入id"size="50" /><br />		
+			</div>
+			<div class="box3">
+				<p class="p">
+					姓名
+				</p>
+			</div>
+			<div>
+				<input type="text" name="name" placeholder="请输入姓名"size="50" /><br />		
+			</div>
+			<div class="box3">
+				<p class="p">
+					电话
+				</p>
+			</div>
+			<div>
+				<input type="text" name="telephone" placeholder="请输入电话"size="50" /><br />		
+			</div>
+			<div class="box3">
+				<p class="p">
+					地址
+				</p>
+			</div>
+			<div>
+				<input type="text" name="address" placeholder="请输入地址"size="50" /><br />		
+			</div>
+			<div>
+					<span><input type="submit" value="BY ID" /></span>
+					<span><input type="submit" value="BY NAME" /></span>
+					<span><input type="submit" value="BY TELEPHONE" /></span>
+					<span><input type="submit" value="BY ADDRESS" /></span>
+			</div>
+		</form>
+
+	</div>
+
+
+</body>
+</html>
